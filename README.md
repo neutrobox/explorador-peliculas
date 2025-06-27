@@ -17,14 +17,6 @@ Una aplicación web moderna para explorar, buscar y gestionar tu lista personal 
 - ⚡ **Performance**: Client-Side Rendering con lazy loading
 - 🎨 **UI Moderna**: Diseño elegante con Radix UI y gradientes
 
-## 🚀 Demo
-
-[Ver Demo en Vivo](https://tu-demo-url.com) <!-- Actualizar con la URL real -->
-
-## 📸 Screenshots
-
-<!-- Agregar screenshots aquí -->
-
 ## 🛠️ Stack Tecnológico
 
 - **Frontend**: React 19 + TypeScript
