@@ -161,9 +161,3 @@ Este proyecto está bajo la Licencia MIT. Ver [LICENSE](LICENSE) para más detal
 - [Radix UI](https://www.radix-ui.com/) por los componentes
 - [TanStack](https://tanstack.com/) por Router y Query
 - [Vite](https://vitejs.dev/) por la herramienta de build
-
-## 📞 Contacto
-
-Tu Nombre - [@tu_twitter](https://twitter.com/tu_twitter) - tu.email@ejemplo.com
-
-Link del Proyecto: [https://github.com/tu-usuario/explorador-peliculas](https://github.com/tu-usuario/explorador-peliculas)
