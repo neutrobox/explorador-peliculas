@@ -1,0 +1,170 @@
+@import '@radix-ui/themes/styles.css';
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, var(--gray-1) 0%, var(--gray-2) 100%);
+  color: var(--gray-12);
+}
+
+/* Modern navigation buttons */
+.nav-button {
+  border-radius: var(--radius-4) !important;
+  transition: all 0.2s ease !important;
+  backdrop-filter: blur(8px);
+}
+
+.nav-button:hover {
+  background-color: var(--violet-3) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Custom responsive utilities */
+@media (max-width: 520px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+}
+
+@media (min-width: 521px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+/* Smooth transitions for interactive elements */
+button, a {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modern card styles */
+.rt-Card {
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--gray-6);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rt-Card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: var(--violet-6);
+}
+
+/* Modern button styles */
+.rt-Button {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+}
+
+.rt-Button:hover {
+  transform: translateY(-1px);
+}
+
+/* Improve touch targets on mobile */
+@media (max-width: 768px) {
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Custom scrollbar for horizontal scroll areas */
+.rt-ScrollAreaScrollbar[data-orientation="horizontal"] {
+  height: 10px;
+}
+
+.rt-ScrollAreaThumb {
+  background: linear-gradient(135deg, var(--violet-8) 0%, var(--violet-9) 100%);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.rt-ScrollAreaThumb:hover {
+  background: linear-gradient(135deg, var(--violet-9) 0%, var(--violet-10) 100%);
+  transform: scaleY(1.2);
+}
+
+/* Improve focus visibility */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--violet-8);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(var(--violet-9-rgb), 0.2);
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+.loading-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Gradient animations */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animated {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Modern glass effect */
+.glass-effect {
+  background: rgba(var(--gray-2-rgb), 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(var(--gray-6-rgb), 0.5);
+}
+
+/* Hover glow effect */
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px rgba(var(--violet-9-rgb), 0.3);
+}
+
+/* Movie Card Styles */
+.movie-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-color: var(--violet-7);
+}
+
+.watchlist-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Rating badge animation */
+.movie-card:hover .rt-Flex[style*="amber"] {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(var(--amber-9-rgb), 0.3);
+}
